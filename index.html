@@ -80,7 +80,7 @@
             <h1 id="homeHeading">Tabletop Simulator Backup for OSX</h1>
             <hr>
             <p>Never lose another mod again. Copy and host mods privately.</p>
-            <a href="files/Tabletop_Simulator_Backup_Installer.dmg" class="btn btn-primary btn-xl page-scroll">Download
+            <a href="/files/Tabletop_Simulator_Backup_Installer.dmg" class="btn btn-primary btn-xl">Download
                 .dmg installer</a>
         </div>
     </div>
@@ -93,7 +93,7 @@
                 <h2 class="section-heading">Download</h2>
                 <hr class="light">
                 <a href="files/Tabletop_Simulator_Backup_Installer.dmg"
-                   class="page-scroll btn btn-default btn-xl sr-button">Download .dmg installer</a>
+                   class="btn btn-default btn-xl sr-button">Download .dmg installer</a>
                 <h3>Recent changes</h3>
                 <p class="text-faded">1.0 - Initial release!</p>
             </div>
@@ -188,5 +188,28 @@
 
 <!-- Theme JavaScript -->
 <script src="js/creative.min.js"></script>
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-82099580-1', 'auto');
+    ga('send', 'pageview');
+</script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('a').click(function () {
+            var href = $(this).attr('href');
+            ga('send', 'pageview', href);
+        });
+    });
+</script>
 </body>
 </html>
